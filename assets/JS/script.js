@@ -22,6 +22,11 @@ button.addEventListener("click", function zahlen(e) {
 });
 entfernen.addEventListener("click", (e) => {
 	let ps = document.querySelectorAll("p");
-	console.log(ps);
-	ps.removeChild()
+	let psLength = ps.length;
+
+	if (ps.length - 1 > 0) {
+		zahlenreihe.removeChild(ps[ps.length - 1]);
+	} else {
+		window.location.reload();
+	}
 });
