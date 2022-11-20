@@ -18,10 +18,47 @@ body {
   font-size: 1.5rem;
 }
 
+.firstNumber {
+  color: #fff;
+  border: 2px solid red;
+  background-color: red;
+  box-shadow: 0 0 15px 3px red;
+  border-radius: 50%;
+}
+
 button {
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   width: 100%;
-  background: linear-gradient(45deg, red 0%, white 10%, white 100%);
+  background: linear-gradient(45deg, red 0%, #fff 10%, #fff 100%);
+}
+
+#button1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#button2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(45deg, #fff 0%, #fff 90%, red 100%);
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 1.5rem 0.5rem;
+  }
+  #zahlenreihe {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #zahlenreihe p {
+    margin: 1rem 0;
+    height: 40px;
+    width: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
