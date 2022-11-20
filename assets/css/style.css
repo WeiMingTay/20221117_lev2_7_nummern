@@ -1,0 +1,27 @@
+body {
+  padding: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#zahlenreihe {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+#zahlenreihe p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 0, 0);
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+  background: linear-gradient(45deg, red 0%, white 10%, white 100%);
+}/*# sourceMappingURL=style.css.map */
